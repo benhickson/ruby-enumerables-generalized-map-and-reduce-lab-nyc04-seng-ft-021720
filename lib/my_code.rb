@@ -38,7 +38,7 @@ def map(array)
   new
 end
 
-def reduce(array, starting_value = 0)
+def reduce(array, starting_value = nil)
   
   output = starting_value
 
