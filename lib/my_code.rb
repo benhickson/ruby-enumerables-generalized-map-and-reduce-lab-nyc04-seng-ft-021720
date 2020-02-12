@@ -44,7 +44,7 @@ def reduce(array, starting_value = nil)
     num1 = starting_value
   else
     num1 = array[0]
-    array = array.shift()
+    array.shift()
   end
   
   array.length.times do |i|
