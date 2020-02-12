@@ -48,7 +48,7 @@ def reduce(array, starting_value = nil)
   end
   
   array.length.times do |i|
-    output = yield(sum, array[i])
+    output = yield(output, array[i])
   end
   output
 end
