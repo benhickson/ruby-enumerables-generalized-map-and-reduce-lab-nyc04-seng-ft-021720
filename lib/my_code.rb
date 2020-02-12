@@ -42,13 +42,13 @@ def reduce(array, starting_value = nil)
   
   if starting_value
     num1 = starting_value
-    i = 0
   else
-    
+    num1 = array[0]
+    array = array.shift()
+  end
   
-
   array.length.times do |i|
-    output = yield(output, array[i])
+    output = yield(num1, array[i])
   end
   output
 end
