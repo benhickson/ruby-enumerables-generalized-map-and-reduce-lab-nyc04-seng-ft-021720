@@ -42,7 +42,9 @@ def reduce(array, starting_value = nil)
   
   if starting_value
     output = starting_value
-  end
+  else
+    
+  
 
   array.length.times do |i|
     output = yield(output, array[i])
