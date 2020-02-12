@@ -41,14 +41,14 @@ end
 def reduce(array, starting_value = nil)
   
   if starting_value
-    sum = starting_value
+    output = starting_value
   else
-    sum = array[0]
+    output = array[0]
     array.shift()
   end
   
   array.length.times do |i|
-    sum = yield(sum, array[i])
+    output = yield(sum, array[i])
   end
-  sum
+  output
 end
